@@ -44,9 +44,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvancedChordProgressions.cs" />
+    <Compile Include="AdvancedRhythms.cs" />
+    <Compile Include="CarnaticReplacementMapDemo.cs" />
+    <Compile Include="HelloWorld.cs" />
+    <Compile Include="HelloWorld2.cs" />
+    <Compile Include="IntroToChordProgressions.cs" />
+    <Compile Include="IntroToPatterns.cs" />
+    <Compile Include="IntroToPatterns2.cs" />
+    <Compile Include="IntroToRhythms.cs" />
+    <Compile Include="LSystemMusic.cs" />
+    <Compile Include="MyParserListener.cs" />
+    <Compile Include="ParserDemo.cs" />
+    <Compile Include="ParserDemo2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Samples.cs" />
+    <Compile Include="RealtimeExample.cs" />
+    <Compile Include="ReplacementMaps.cs" />
+    <Compile Include="SampleRunner.cs" />
+    <Compile Include="SeeMidi.cs" />
+    <Compile Include="SolfegeReplacementMapDemo.cs" />
+    <Compile Include="TemporalExample.cs" />
+    <Compile Include="TitleAttribute.cs" />
+    <Compile Include="TryThis.cs" />
+    <Compile Include="TwelveBarBlues.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -73,7 +94,7 @@
       <HintPath>..\..\packages\Sanford.MidiToolkit.5.0.2\lib\net40\Sanford.Threading.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <ProjectReference Include="..\src\NFugue\NFugue.csproj">
+    <ProjectReference Include="..\NFugue\NFugue.csproj">
       <Project>{22ac1834-b1e4-4894-b815-a9ab14fd9803}</Project>
       <Name>NFugue</Name>
     </ProjectReference>

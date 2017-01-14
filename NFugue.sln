@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{35235A6C
 		src\NFugue\NFugue.nuspec = src\NFugue\NFugue.nuspec
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFugue.Samples", "NFugue.Samples\NFugue.Samples.csproj", "{47C236C3-3FB2-4DA0-8055-E2EA5451AC81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFugue.Samples", "src\NFugue.Samples\NFugue.Samples.csproj", "{47C236C3-3FB2-4DA0-8055-E2EA5451AC81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
