@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AudioSynthesis">
+      <!-- The following binary was built from the repository https://csharpsynthproject.codeplex.com/SourceControl/network/forks/mdileep/midi-->
       <HintPath>..\..\Packages\External\AudioSynthesis.dll</HintPath>
     </Reference>
     <Reference Include="NAudio">
