@@ -2,6 +2,7 @@
 using NFugue.Playing;
 using NFugue.Staccato;
 using Sanford.Multimedia.Midi;
+using System.IO;
 
 namespace NFugue.Midi.Conversion
 {
@@ -22,6 +23,20 @@ namespace NFugue.Midi.Conversion
             {
                 player.GetSequence(patternProducer)
                     .Save(filePath);
+            }
+        }
+
+        /// <summary>
+        /// Saves pattern produced by the <paramref name="patternProducer"/> to a MIDI file
+        /// </summary>
+        /// <param name="patternProducer">Producer from which the pattern should be saved</param>
+        /// <param name="filePath">Path to the MIDI file</param>
+        public static void SavePatternToStream(IPatternProducer patternProducer, Stream stream)
+        {
+            using (var player = new Player())
+            {
+                player.GetSequence(patternProducer)
+                    .Save(stream);
             }
         }
 

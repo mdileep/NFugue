@@ -35,18 +35,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <Reference Include="Sanford.Multimedia.Midi, Version=6.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <!--The following binary is different from available Official Nuget Package. Refer https://github.com/tebjan/Sanford.Multimedia.Midi/pull/13-->
+      <HintPath>assemblies\Sanford.Multimedia.Midi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Midi">
+      <HintPath>assemblies\Midi.dll</HintPath>
+    </Reference>
+    <Reference Include="NFuge.Converters">
+      <HintPath>assemblies\NFuge.Converters.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdvancedChordProgressions.cs" />
     <Compile Include="AdvancedRhythms.cs" />
     <Compile Include="CarnaticReplacementMapDemo.cs" />
+    <Compile Include="SaveAsStream.cs" />
+    <Compile Include="SaveAsWave.cs" />
+    <Compile Include="SaveAsMidi.cs" />
     <Compile Include="HelloWorld.cs" />
     <Compile Include="HelloWorld2.cs" />
     <Compile Include="IntroToChordProgressions.cs" />
@@ -74,26 +82,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Sanford.Collections, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Sanford.MidiToolkit.5.0.2\lib\net40\Sanford.Collections.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sanford.Multimedia, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Sanford.MidiToolkit.5.0.2\lib\net40\Sanford.Multimedia.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sanford.Multimedia.Midi, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Sanford.MidiToolkit.5.0.2\lib\net40\Sanford.Multimedia.Midi.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sanford.Multimedia.Timers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Sanford.MidiToolkit.5.0.2\lib\net40\Sanford.Multimedia.Timers.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sanford.Threading, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Sanford.MidiToolkit.5.0.2\lib\net40\Sanford.Threading.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <ProjectReference Include="..\NFugue\NFugue.csproj">
       <Project>{22ac1834-b1e4-4894-b815-a9ab14fd9803}</Project>
       <Name>NFugue</Name>
