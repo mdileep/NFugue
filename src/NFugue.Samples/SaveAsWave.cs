@@ -20,9 +20,9 @@ namespace NFugue.Samples
 													   .SetTempo(100);
 			string midiFile = "TwelveBarBlues.mid";
 
-			pattern.SaveAsMidi(midiFile);
-			MidiFileConverter.SavePatternToMidi(pattern, midiFile);
-			WaveConverter.Convert(midiFile, midiFile + ".wav");
+			//pattern.SaveAsMidi(midiFile);
+			//MidiFileConverter.SavePatternToMidi(pattern, midiFile);
+			//WaveConverter.Convert(midiFile, midiFile + ".wav");
 
 			using (MemoryStream midiStream = new MemoryStream())
 			{

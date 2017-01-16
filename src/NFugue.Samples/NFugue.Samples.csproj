@@ -34,6 +34,31 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NAudio, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NAudio.1.8.0\lib\net35\NAudio.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NAudio.Flac">
+      <HintPath>..\..\Packages\External\NAudio.Flac.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.SharpMik">
+      <HintPath>..\..\Packages\External\NAudio.SharpMik.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WindowsMediaFormat">
+      <HintPath>..\..\Packages\External\NAudio.WindowsMediaFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="NLayer">
+      <HintPath>..\..\Packages\External\NLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="NLayer.NAudioSupport">
+      <HintPath>..\..\Packages\External\NLayer.NAudioSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="NVorbis">
+      <HintPath>..\..\Packages\External\NVorbis.dll</HintPath>
+    </Reference>
+    <Reference Include="NVorbis.NAudioSupport">
+      <HintPath>..\..\Packages\External\NVorbis.NAudioSupport.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Sanford.Multimedia.Midi, Version=6.1.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -41,8 +66,9 @@
       <HintPath>assemblies\Sanford.Multimedia.Midi.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Midi">
-      <HintPath>assemblies\Midi.dll</HintPath>
+    <Reference Include="AudioSynthesis">
+      <!-- The following binary was built from the repository https://csharpsynthproject.codeplex.com/SourceControl/network/forks/mdileep/midi-->
+      <HintPath>assemblies\AudioSynthesis.dll</HintPath>
     </Reference>
     <Reference Include="NFuge.Converters">
       <HintPath>assemblies\NFuge.Converters.dll</HintPath>
@@ -79,7 +105,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NFugue\NFugue.csproj">
