@@ -52,20 +52,24 @@
     <Reference Include="NVorbis, Version=0.8.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NVorbis.0.8.5.0\lib\NVorbis.dll</HintPath>
     </Reference>
+    <Reference  Include="NVorbis.NAudioSupport">
+      <!--Source: https://github.com/ioctlLR/NVorbis/-->
+      <HintPath>..\assemblies\NVorbis.NAudioSupport.dll</HintPath>
+    </Reference>
     <Reference Include="NAudio.SharpMik">
       <!--Source: https://archive.codeplex.com/?p=sharpmik-->
-      <HintPath>assemblies\NAudio.SharpMik.dll</HintPath>
+      <HintPath>..\assemblies\NAudio.SharpMik.dll</HintPath>
     </Reference>
     <Reference Include="NAudio.WindowsMediaFormat">
       <!--Source:https://github.com/naudio/NAudio.Wma-->
-      <HintPath>assemblies\NAudio.WindowsMediaFormat.dll</HintPath>
+      <HintPath>..\assemblies\NAudio.WindowsMediaFormat.dll</HintPath>
     </Reference>
     <Reference Include="Sanford.Multimedia.Midi">
-      <HintPath>assemblies\Sanford.Multimedia.Midi.dll</HintPath>
+      <HintPath>..\assemblies\Sanford.Multimedia.Midi.dll</HintPath>
     </Reference>
     <Reference Include="AudioSynthesis">
       <!-- The following binary was built from the repository https://csharpsynthproject.codeplex.com/SourceControl/network/forks/mdileep/midi-->
-      <HintPath>assemblies\AudioSynthesis.dll</HintPath>
+      <HintPath>..\assemblies\AudioSynthesis.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
