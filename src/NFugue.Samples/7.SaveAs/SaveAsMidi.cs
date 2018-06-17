@@ -21,7 +21,6 @@ namespace NFugue.Samples
 															.SetInstrument(Instrument.AcousticBass)
 															.SetTempo(100);
 			string midiFile = "TwelveBarBlues.mid";
-
 			pattern.SaveAsMidi(midiFile);
 			MidiFileConverter.SavePatternToMidi(pattern, midiFile);
 		}

@@ -34,75 +34,69 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="NAudio, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NAudio.1.8.0\lib\net35\NAudio.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NAudio.Flac">
-      <HintPath>..\..\Packages\External\NAudio.Flac.dll</HintPath>
+    <Reference Include="NAudio.Flac, Version=1.0.5702.29018, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NAudio.Flac.1.0.5702.29018\lib\net45\NAudio.Flac.dll</HintPath>
+    </Reference>
+    <Reference Include="NLayer, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NLayer.1.12.0\lib\net35\NLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="NLayer.NAudioSupport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NLayer.NAudioSupport.1.0.0\lib\net35\NLayer.NAudioSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="NVorbis, Version=0.8.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NVorbis.0.8.5.0\lib\NVorbis.dll</HintPath>
     </Reference>
     <Reference Include="NAudio.SharpMik">
-      <HintPath>..\..\Packages\External\NAudio.SharpMik.dll</HintPath>
+      <!--Source: https://archive.codeplex.com/?p=sharpmik-->
+      <HintPath>assemblies\NAudio.SharpMik.dll</HintPath>
     </Reference>
     <Reference Include="NAudio.WindowsMediaFormat">
-      <HintPath>..\..\Packages\External\NAudio.WindowsMediaFormat.dll</HintPath>
+      <!--Source:https://github.com/naudio/NAudio.Wma-->
+      <HintPath>assemblies\NAudio.WindowsMediaFormat.dll</HintPath>
     </Reference>
-    <Reference Include="NLayer">
-      <HintPath>..\..\Packages\External\NLayer.dll</HintPath>
-    </Reference>
-    <Reference Include="NLayer.NAudioSupport">
-      <HintPath>..\..\Packages\External\NLayer.NAudioSupport.dll</HintPath>
-    </Reference>
-    <Reference Include="NVorbis">
-      <HintPath>..\..\Packages\External\NVorbis.dll</HintPath>
-    </Reference>
-    <Reference Include="NVorbis.NAudioSupport">
-      <HintPath>..\..\Packages\External\NVorbis.NAudioSupport.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="Sanford.Multimedia.Midi, Version=6.1.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <!--The following binary is different from available Official Nuget Package. Refer https://github.com/tebjan/Sanford.Multimedia.Midi/pull/13-->
+    <Reference Include="Sanford.Multimedia.Midi">
       <HintPath>assemblies\Sanford.Multimedia.Midi.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="AudioSynthesis">
       <!-- The following binary was built from the repository https://csharpsynthproject.codeplex.com/SourceControl/network/forks/mdileep/midi-->
       <HintPath>assemblies\AudioSynthesis.dll</HintPath>
     </Reference>
-    <Reference Include="NFuge.Converters">
-      <HintPath>assemblies\NFuge.Converters.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1.HelloWorld\HelloWorld.cs" />
+    <Compile Include="1.HelloWorld\HelloWorld2.cs" />
+    <Compile Include="2.Patterns\IntroToPatterns.cs" />
+    <Compile Include="2.Patterns\IntroToPatterns2.cs" />
+    <Compile Include="3.ChordProgressions\IntroToChordProgressions.cs" />
     <Compile Include="3.ChordProgressions\AdvancedChordProgressions.cs" />
     <Compile Include="4.Rhythms\AdvancedRhythms.cs" />
+    <Compile Include="4.Rhythms\IntroToRhythms.cs" />
+    <Compile Include="5.TweleveBar\TwelveBarBlues.cs" />
+    <Compile Include="6.ReplacementMaps\LSystemMusic.cs" />
     <Compile Include="6.ReplacementMaps\CarnaticReplacementMapDemo.cs" />
-    <Compile Include="9.Try\PlayGround.cs" />
+    <Compile Include="6.ReplacementMaps\ReplacementMaps.cs" />
+    <Compile Include="6.ReplacementMaps\SolfegeReplacementMapDemo.cs" />
     <Compile Include="7.SaveAs\SaveAsStream.cs" />
     <Compile Include="7.SaveAs\SaveAsWave.cs" />
     <Compile Include="7.SaveAs\SaveAsMidi.cs" />
-    <Compile Include="1.HelloWorld\HelloWorld.cs" />
-    <Compile Include="1.HelloWorld\HelloWorld2.cs" />
-    <Compile Include="3.ChordProgressions\IntroToChordProgressions.cs" />
-    <Compile Include="2.Patterns\IntroToPatterns.cs" />
-    <Compile Include="2.Patterns\IntroToPatterns2.cs" />
-    <Compile Include="4.Rhythms\IntroToRhythms.cs" />
-    <Compile Include="6.ReplacementMaps\LSystemMusic.cs" />
-    <Compile Include="C.Misc\MyParserListener.cs" />
+    <Compile Include="8.Read\SeeMidi.cs" />
+    <Compile Include="9.Try\TryThis.cs" />
+    <Compile Include="9.Try\PlayGround.cs" />
     <Compile Include="A.Parser\ParserDemo.cs" />
     <Compile Include="A.Parser\ParserDemo2.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="B.RealTime\RealtimeExample.cs" />
-    <Compile Include="6.ReplacementMaps\ReplacementMaps.cs" />
-    <Compile Include="SampleRunner.cs" />
-    <Compile Include="8.Read\SeeMidi.cs" />
-    <Compile Include="6.ReplacementMaps\SolfegeReplacementMapDemo.cs" />
+    <Compile Include="C.Misc\MyParserListener.cs" />
     <Compile Include="C.Misc\TemporalExample.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="SampleRunner.cs" />
     <Compile Include="TitleAttribute.cs" />
-    <Compile Include="9.Try\TryThis.cs" />
-    <Compile Include="5.TweleveBar\TwelveBarBlues.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -111,12 +105,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NFugue.Converter\NFuge.Converters.vbproj">
+      <Project>{b3c866c1-fd38-4ade-919b-4fa7204a4e1a}</Project>
+      <Name>NFuge.Converters</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NFugue\NFugue.csproj">
       <Project>{22ac1834-b1e4-4894-b815-a9ab14fd9803}</Project>
       <Name>NFugue</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

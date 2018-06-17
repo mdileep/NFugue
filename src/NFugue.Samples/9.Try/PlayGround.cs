@@ -13,6 +13,7 @@ namespace NFugue.Samples
 		public static void Run()
 		{
 			/*
+			 
 			 ChordProgression :  
 			 MAJOR:            W-W-H-W-W-W-H
 			 Major Chord    :  1-3-5
@@ -37,7 +38,20 @@ namespace NFugue.Samples
 				{'+', "[CRASH_CYMBAL_1]s Rs"},
 				{'X', "[HAND_CLAP]i"},
 				{'x', "Rs [HAND_CLAP]s"},
-			 */
+		
+			'V' command for specifing voices
+			'I[Instrument Name]'
+			'|' (pipe) for indicating measures (optional)
+			Durations 
+				'q' for quarter 
+				'qqq' for three quarter notes (multiple durations can be listed together), 
+				'h' for half
+				'w' for whole
+				'.' for a dotted duration
+				'R' for rest
+				 Gmaj chords G-Major 
+				' ' Whitespace is not significant
+			  */
 
 			//Pattern pattern = new ChordProgression("i iii v")
 			//				.SetKey("D")
