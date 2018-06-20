@@ -1,5 +1,4 @@
-﻿using NFuge.Converters.NFuge.Converters;
-using NFugue.Midi;
+﻿using NFugue.Midi;
 using NFugue.Midi.Conversion;
 using NFugue.Patterns;
 using NFugue.Theory;
@@ -29,13 +28,6 @@ namespace NFugue.Samples
 
 				FileStream midiFileStream = new FileStream(midiFile, FileMode.Create);
 				midiStream.WriteTo(midiFileStream);
-
-				using (MemoryStream waveStream = new MemoryStream())
-				{
-					WaveConverter.Convert(".mid", midiStream, waveStream);
-					FileStream waveFileStream = new FileStream(midiFile + ".wav", FileMode.Create);
-					waveStream.WriteTo(waveFileStream);
-				}
 			}
 		}
 	}
