@@ -2,7 +2,6 @@
 using NFugue.Midi.Conversion;
 using NFugue.Patterns;
 using NFugue.Theory;
-using System.IO;
 
 namespace NFugue.Samples
 {
