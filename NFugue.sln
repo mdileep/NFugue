@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFugue", "src\NFugue\NFugue.csproj", "{22AC1834-B1E4-4894-B815-A9AB14FD9803}"
 EndProject
@@ -22,7 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{35235A6C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFugue.Samples", "src\NFugue.Samples\NFugue.Samples.csproj", "{47C236C3-3FB2-4DA0-8055-E2EA5451AC81}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NFuge.Converters", "src\NFugue.Converter\NFuge.Converters.vbproj", "{B3C866C1-FD38-4ADE-919B-4FA7204A4E1A}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NFugue.Converters", "src\NFugue.Converter\NFugue.Converters.vbproj", "{B3C866C1-FD38-4ADE-919B-4FA7204A4E1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,5 +53,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04929DA3-FDC8-47DE-BCF1-3B788C9B4E38}
 	EndGlobalSection
 EndGlobal

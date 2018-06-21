@@ -316,6 +316,7 @@ Public Class MediaReader
                 Return readerStream.Read(buffer, offset, count)
             End If
         End SyncLock
+        Return Nothing
     End Function
 
     Private Function IsWinVistaOrAbove() As Boolean

@@ -65,6 +65,9 @@
     <Reference Include="NVorbis, Version=0.8.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NVorbis.0.8.5.0\lib\NVorbis.dll</HintPath>
     </Reference>
+    <Reference Include="Sanford.Multimedia.Midi, Version=6.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Sanford.Multimedia.Midi.6.6.0\lib\net20\Sanford.Multimedia.Midi.dll</HintPath>
+    </Reference>
     <Reference  Include="NVorbis.NAudioSupport">
       <!--Source: https://github.com/ioctlLR/NVorbis/-->
       <HintPath>..\assemblies\NVorbis.NAudioSupport.dll</HintPath>
@@ -77,9 +80,6 @@
       <!--Source:https://github.com/naudio/NAudio.Wma-->
       <HintPath>..\assemblies\NAudio.WindowsMediaFormat.dll</HintPath>
     </Reference>
-    <Reference Include="Sanford.Multimedia.Midi">
-      <HintPath>..\assemblies\Sanford.Multimedia.Midi.dll</HintPath>
-    </Reference>
     <Reference Include="AudioSynthesis">
       <!-- The following binary was built from the repository https://csharpsynthproject.codeplex.com/SourceControl/network/forks/mdileep/midi-->
       <HintPath>..\assemblies\AudioSynthesis.dll</HintPath>
@@ -90,7 +90,6 @@
     <Import Include="System" />
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
-    <Import Include="System.Data" />
     <Import Include="System.Diagnostics" />
   </ItemGroup>
   <ItemGroup>

@@ -2,7 +2,7 @@
 Imports NAudio.Wave
 Imports NAudio.Wave.SampleProviders
 
-Namespace NFuge.Converters
+Namespace NFugue.Converters
 
     ' Original: https://www.codeproject.com/articles/990040/multiwave-a-portable-multi-device-net-audio-player
     ' Credits to the Original Author: Freefall

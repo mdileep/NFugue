@@ -104,9 +104,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NFugue.Converter\NFuge.Converters.vbproj">
+    <ProjectReference Include="..\NFugue.Converter\NFugue.Converters.vbproj">
       <Project>{b3c866c1-fd38-4ade-919b-4fa7204a4e1a}</Project>
-      <Name>NFuge.Converters</Name>
+      <Name>NFugue.Converters</Name>
     </ProjectReference>
     <ProjectReference Include="..\NFugue\NFugue.csproj">
       <Project>{22ac1834-b1e4-4894-b815-a9ab14fd9803}</Project>
