@@ -10,7 +10,8 @@
     <AssemblyName>NFuge.Converters</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -68,7 +69,7 @@
     <Reference Include="Sanford.Multimedia.Midi, Version=6.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Sanford.Multimedia.Midi.6.6.0\lib\net20\Sanford.Multimedia.Midi.dll</HintPath>
     </Reference>
-    <Reference  Include="NVorbis.NAudioSupport">
+    <Reference Include="NVorbis.NAudioSupport">
       <!--Source: https://github.com/ioctlLR/NVorbis/-->
       <HintPath>..\assemblies\NVorbis.NAudioSupport.dll</HintPath>
     </Reference>

@@ -1,4 +1,4 @@
-﻿using NFuge.Converters.NFugue.Converters;
+﻿using NFuge.Converters;
 using NFugue.Midi;
 using NFugue.Midi.Conversion;
 using NFugue.Patterns;

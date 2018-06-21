@@ -22,7 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{35235A6C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFugue.Samples", "src\NFugue.Samples\NFugue.Samples.csproj", "{47C236C3-3FB2-4DA0-8055-E2EA5451AC81}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NFugue.Converters", "src\NFugue.Converter\NFugue.Converters.vbproj", "{B3C866C1-FD38-4ADE-919B-4FA7204A4E1A}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NFugue.Converters", "src\NFugue.Converters\NFugue.Converters.vbproj", "{B3C866C1-FD38-4ADE-919B-4FA7204A4E1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
